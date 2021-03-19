@@ -8,7 +8,15 @@
                 }
             }
         ],
-        "next/babel",
-        "@babel/preset-react"
+        "@babel/preset-react",
+        "next/babel"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-react-jsx",
+            {
+                "runtime": "automatic"
+            }
+        ]
     ]
 }
