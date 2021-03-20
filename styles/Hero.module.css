@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("/fonts/source-code-pro/SourceCodePro-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("/fonts/teko/Teko-Bold.ttf");
+  font-style: bold;
+}
+
+.container {
+  width: 100%;
+  height: 50vw;
+  display: inline-grid;
+  grid-template-columns: 10% 40% 40% 10%;
+}
+
+.rightSection {
+  display: block;
+}
+
+.colorPicker {
+  background-color: #0bca74;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-radius: 70px;
+
+  width: 90%;
+  height: 50%;
+}
+.sloganContainer {
+  display: inline;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.mainTextBlackPart {
+  font-family: "Teko";
+  font-style: bold;
+  display: inline;
+  margin: 0;
+  color: black;
+  font-size: 3vw;
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 100%;
+  }
+}
+
+.mainTextT {
+  -webkit-animation: fadeIn 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 1s;
+
+  opacity: 0;
+}
+
+.mainTextGreenPart {
+  font-family: "Teko";
+  display: inline;
+  margin: 0;
+  color: #0bca74;
+  font-size: 3.5vw;
+}
+
+@-webkit-keyframes slideOut {
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideOut {
+  100% {
+    margin-left: 0;
+  }
+}
+
+.mainTextOol {
+  -webkit-animation: slideOut 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slideOut 0.5s forwards;
+  animation-delay: 0.5s;
+  margin-left: -1.6vw;
+}
+
+.description {
+  font-family: "SourceCodePro";
+  font-style: italic;
+  margin-top: 2vw;
+  font-weight: lighter;
+  font-size: 2vw;
+}
+
+.signUp {
+  font-family: "SourceCodePro";
+  font-style: italic;
+  display: block;
+  margin: auto;
+  margin-top: 4vw;
+  text-align: center;
+  color: white;
+  background-color: #f95b79;
+  font-size: 1.6vw;
+  padding: 1vw 2vw 1vw 2vw;
+  border-radius: 1.7vw;
+  max-width: 24vw;
+}
+
+/* Mobile */
+@media screen and (min-width: 320px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) {
+}
+
+/* Small screen */
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  .colorPicker {
+    border-radius: 50px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+}
+
+/* Normal screen */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+/* Extra large - Probably wont do this */
+@media screen and (min-width: 1201px) {
+}

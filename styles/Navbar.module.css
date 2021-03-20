@@ -11,28 +11,12 @@
   grid-template-columns: 10% 35% 45% 10%;
 }
 
-@-webkit-keyframes flyin {
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes flyin {
-  100% {
-    top: 0;
-  }
-}
-
 .logo {
   width: 3.7vw;
   height: 3.7vw;
   grid-column-start: 2;
   grid-column-end: 3;
   position: relative;
-  top: -100px;
-  -webkit-animation: flyin 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: flyin 0.5s forwards;
 }
 
 .navbar {
