@@ -1,14 +1,13 @@
 .container {
   width: 100%;
-  height: 50px;
   display: inline-grid;
+  align-items: center;
   grid-template-columns: 10% 40% 40% 10%;
 }
 
 .logo {
-  border: solid grey 1px;
-  width: 6vw;
-  height: 6vw;
+  width: 3.7vw;
+  height: 3.7vw;
   grid-column-start: 2;
   grid-column-end: 3;
 }

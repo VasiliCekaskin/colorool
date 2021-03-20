@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "../../styles/Navbar.module.css";
-import { useEffect } from "react";
 import React from "react";
 
 const itemStateStyle = (linkPath: string): string => {
@@ -20,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <div className={styles.container}>
-        <img className={styles.logo} alt="colorool logo" />
+        <img src="logo.png" className={styles.logo} alt="colorool logo" />
         <div className={styles.navbar}>
           <Link href="/">
             <a className={`${styles.navbarItem} ${itemStateStyle("/")}`}>
