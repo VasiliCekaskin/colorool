@@ -24,6 +24,7 @@
 .navbarItem {
   font-size: 1.7vw;
   padding: 2vw;
+  font-style: italic;
 }
 
 .signIn {
@@ -32,6 +33,40 @@
   margin-left: 2vw;
   border: solid #111111 0.1vw;
   border-radius: 1.7vw;
+  font-style: italic;
+}
+
+.active::after {
+  margin: 0 auto;
+  margin-top: 0.1vw;
+  display: block;
+  background: black;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100%;
+  content: "";
+}
+
+.inactive::after {
+  margin: 0 auto;
+  margin-top: 0.1vw;
+  display: block;
+  background: grey;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100%;
+  content: "";
+}
+
+.inactive:hover::after {
+  margin: 0 auto;
+  margin-top: 0.1vw;
+  display: block;
+  background: black;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100%;
+  content: "";
 }
 
 /* Responsive stuff */
