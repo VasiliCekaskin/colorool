@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("/fonts/source-code-pro/SourceCodePro-Italic.ttf");
+  font-style: italic;
+}
+
 .container {
   width: 100%;
   display: inline-grid;
   align-items: center;
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 35% 45% 10%;
 }
 
 @-webkit-keyframes flyin {
@@ -31,7 +37,6 @@
 
 .navbar {
   display: flex;
-  float: right;
   grid-column-start: 3;
   grid-column-end: 4;
   align-items: center;
@@ -39,7 +44,9 @@
 
 .navbarItem {
   font-size: 1.7vw;
-  padding: 2vw;
+  padding: 1vw;
+  letter-spacing: 0.1vw;
+  font-family: "SourceCodePro";
   font-style: italic;
 }
 
@@ -53,8 +60,7 @@
 }
 
 .active::after {
-  margin: 0 auto;
-  margin-top: 0.1vw;
+  margin: 0.3vw auto 0;
   display: block;
   background: black;
   width: 0.4vw;
@@ -64,8 +70,7 @@
 }
 
 .inactive::after {
-  margin: 0 auto;
-  margin-top: 0.1vw;
+  margin: 0.5vw auto 0;
   display: block;
   background: grey;
   width: 0.4vw;
@@ -75,8 +80,7 @@
 }
 
 .inactive:hover::after {
-  margin: 0 auto;
-  margin-top: 0.1vw;
+  margin: 0.5vw auto 0;
   display: block;
   background: black;
   width: 0.4vw;
@@ -104,18 +108,18 @@
 
 @media screen and (min-width: 769px) {
   .navbarItem {
-    font-size: 1.9vw;
+    font-size: 1.5vw;
   }
 
   .signIn {
-    font-size: 1.9vw;
+    font-size: 1.5vw;
   }
 }
 
 /* Normal screen */
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
   .container {
-    grid-template-columns: 10% 35% 45% 10%;
+    grid-template-columns: 10% 20% 60% 10%;
   }
 
   .navbarItem {

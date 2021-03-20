@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className={styles.navbar}>
           <Link href="/">
             <a className={`${styles.navbarItem} ${itemStateStyle("/")}`}>
-              Home
+              Color Picker
             </a>
           </Link>
           <Link href="/colorpalettes">
@@ -35,9 +35,13 @@ const Navbar = () => {
               Color Palettes
             </a>
           </Link>
-          <Link href="/help">
-            <a className={`${styles.navbarItem} ${itemStateStyle("/help")}`}>
-              Help Center
+          <Link href="/colorbrowser">
+            <a
+              className={`${styles.navbarItem} ${itemStateStyle(
+                "/colorbrowser"
+              )}`}
+            >
+              Browse Colors
             </a>
           </Link>
           <Link href="/signin">

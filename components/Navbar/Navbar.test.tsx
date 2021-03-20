@@ -13,13 +13,13 @@ describe("Navbar", () => {
   it("has all required links", () => {
     const { getByText } = render(<Navbar />);
 
-    const homeLink = getByText("Home");
+    const colorPicker = getByText("Color Picker");
     const colorPalettes = getByText("Color Palettes");
-    const helpCenter = getByText("Help Center");
+    const colorBrowser = getByText("Browse Colors");
 
-    expect(homeLink).toBeInTheDocument();
+    expect(colorPicker).toBeInTheDocument();
     expect(colorPalettes).toBeInTheDocument();
-    expect(helpCenter).toBeInTheDocument();
+    expect(colorBrowser).toBeInTheDocument();
   });
 
   it("has a sign in link/button", () => {
