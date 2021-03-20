@@ -1,7 +1,15 @@
 import Navbar from "./Navbar";
-import { fireEvent, render } from "@testing-library/react";
+import { render, getByAltText, getByText } from "@testing-library/react";
 
 describe("Navbar", () => {
+  it("has a sign in link/button", () => {
+    const { getByAltText } = render(<Navbar />);
+
+    const Logo = getByAltText("colorool logo");
+
+    expect(Logo).toBeInTheDocument();
+  });
+
   it("has all required links", () => {
     const { getByText } = render(<Navbar />);
 
