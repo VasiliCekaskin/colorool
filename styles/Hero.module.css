@@ -17,19 +17,15 @@
   grid-template-columns: 10% 40% 40% 10%;
 }
 
+.leftSection {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 .rightSection {
   display: block;
 }
 
-.colorPicker {
-  background-color: #0bca74;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  border-radius: 70px;
-
-  width: 90%;
-  height: 50%;
-}
 .sloganContainer {
   display: inline;
   grid-column-start: 3;

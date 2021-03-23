@@ -1,12 +1,16 @@
 import Link from "next/link";
 import styles from "../../styles/Hero.module.css";
 import React from "react";
+import { ChromePicker } from "react-color";
+import ColorTool from "../ColorTool/ColorTool";
 
 const Home = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.colorPicker}></div>
+        <section className={styles.leftSection}>
+          <ColorTool />
+        </section>
         <div className={styles.rightSection}>
           <div className={styles.sloganContainer}>
             <h1 className={styles.mainTextBlackPart}>All-in-One </h1>
