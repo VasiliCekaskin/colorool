@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("/fonts/source-code-pro/SourceCodePro-Italic.ttf");
+  font-style: italic;
+}
+
+.container {
+  width: 100%;
+  display: inline-grid;
+  align-items: center;
+  grid-template-columns: 10% 35% 45% 10%;
+}
+
+.logo {
+  width: 3.7vw;
+  height: 3.7vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  align-items: center;
+}
+
+.navbarItem {
+  font-size: 1.7vw;
+  padding: 1vw;
+  letter-spacing: 0.1vw;
+  font-family: "SourceCodePro";
+  font-style: italic;
+}
+
+.signIn {
+  font-size: 1.7vw;
+  padding: 1vw 2vw 1vw 2vw;
+  margin-left: 2vw;
+  border: solid #111111 0.1vw;
+  border-radius: 1.7vw;
+  font-style: italic;
+}
+
+.active::after {
+  margin: 0.3vw auto 0;
+  display: block;
+  background: black;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100%;
+  content: "";
+}
+
+.inactive::after {
+  margin: 0.5vw auto 0;
+  display: block;
+  background: grey;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100%;
+  content: "";
+}
+
+.inactive:hover::after {
+  margin: 0.5vw auto 0;
+  display: block;
+  background: black;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100%;
+  content: "";
+}
+
+/* Responsive stuff */
+
+/* Mobile */
+@media screen and (min-width: 320px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) {
+}
+
+/* Small screen */
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  .container {
+    grid-template-columns: 10% 20% 60% 10%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbarItem {
+    font-size: 1.5vw;
+  }
+
+  .signIn {
+    font-size: 1.5vw;
+  }
+}
+
+/* Normal screen */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .container {
+    grid-template-columns: 10% 20% 60% 10%;
+  }
+
+  .navbarItem {
+    font-size: 1.5vw;
+  }
+
+  .signIn {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbarItem {
+    font-size: 1vw;
+  }
+
+  .signIn {
+    font-size: 1vw;
+  }
+}
+
+/* Extra large - Probably wont do this */
+@media screen and (min-width: 1201px) {
+}

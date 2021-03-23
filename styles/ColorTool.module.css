@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("/fonts/source-code-pro/SourceCodePro-Italic.ttf");
+  font-style: italic;
+}
+
+.colorPicker {
+  display: grid;
+  background-color: #0bca74;
+  border-radius: 70px;
+  place-content: center;
+
+  width: 90%;
+  height: 50%;
+}
+
+.hexColorCode {
+  letter-spacing: 0.2vw;
+  font-family: "SourceCodePro";
+  color: white;
+  font-style: italic;
+  font-size: 2vw;
+}
+
+.button {
+  font-family: "SourceCodePro";
+  font-family: italic;
+  font-size: 1vw;
+  width: 4vw;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.buttonSelected {
+  font-family: "SourceCodePro";
+  font-family: italic;
+
+  width: 4vw;
+
+  font-size: 1vw;
+  border: solid;
+  border-radius: 2vh;
+  background: none;
+
+  padding: 0;
+  margin: 0;
+}
